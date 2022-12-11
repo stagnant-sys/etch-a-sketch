@@ -41,22 +41,21 @@ main {
   vertical-align: middle; }
 
 .sketch-pad {
-  display: none;
-  grid-template-columns: repeat(16, fit-content(100%));
-  grid-template-rows: repeat(16, fit-content(100%));
+  display: grid;
+  height: 500px;
+  width: 500px;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
   background-color: #aaaaaa; }
 
 .pixel {
-  width: 0.5rem;
-  height: 0.5rem;
   background-color: #aaaaaa;
-  transition: 0.5s cubic-bezier(0, 2, 1, -2); }
+  border: 1px solid #999999;
+  transition: all 0.3s ease; }
   .pixel:hover, .pixel:active {
     background-color: #444444; }
 
 .clicked {
-  width: 0.5rem;
-  height: 0.5rem;
   background-color: #444444; }
 
 /*# sourceMappingURL=styles.css.map */
